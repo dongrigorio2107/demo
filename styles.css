@@ -1,0 +1,11 @@
+#buttons {
+    display: grid; 
+    grid-template-columns: repeat(3, fr);
+    height: 300px;
+}
+#container {
+    grid-template-rows: auto auto auto;
+    border: solid black 2px;
+    width: 300px;
+    height: 350px;
+}
