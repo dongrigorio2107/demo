@@ -1,11 +1,92 @@
-#buttons {
-    display: grid; 
-    grid-template-columns: repeat(3, fr);
-    height: 300px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
 #container {
-    grid-template-rows: auto auto auto;
-    border: solid black 2px;
+    border: solid black 1px;
     width: 300px;
-    height: 350px;
+    height: 300px;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "A A A"
+        "B C D"
+        "E F G"
+        "H I J"
+        "L M N";
+}
+
+#text {
+    grid-area: A;
+    border: solid black 1px;
+}
+
+#button-1 {
+    grid-area: B;
+}
+#button-2 {
+    grid-area: C;
+}
+#button-3 {
+    grid-area: D;
+}
+#button-4 {
+    grid-area: E;
+}
+#button-5 {
+    grid-area: F;
+}
+#button-6 {
+    grid-area: G;
+}
+#button-7 {
+    grid-area: H;
+}
+#button-8 {
+    grid-area: I;
+}
+#button-9 {
+    grid-area: J;
+}
+#button-0 {
+    grid-area: M;
+}
+#button-asterisk {
+    grid-area: L;
+    font-size: 1.8em;
+    
+}
+#button-hash {
+    grid-area: N;
+}
+
+[id^="button-"] {
+    background-color: darkgray;
+    border: solid black 1px;
+    display: grid;
+    place-items: center;
+    margin: 10px;
+}
+
+.margin-left {
+    margin-left: 50px;
+}
+.margin-right{
+    margin-right: 50px;
+}
+.margin-around {
+    margin: 10px 30px;
 }
