@@ -12,7 +12,7 @@ body {
 
 #container {
     border: solid black 1px;
-    width: 300px;
+    width: 250px;
     height: 300px;
     margin: auto;
     margin-top: 40px;
@@ -29,9 +29,14 @@ body {
         "L M N";
 }
 
-#text {
+#display {
     grid-area: A;
     border: solid black 1px;
+    width: 60%;
+    height: 35px;
+    place-self: center;
+    margin-top: 30px;
+    margin-bottom: 20px
 }
 
 #button-1 {
@@ -64,21 +69,21 @@ body {
 #button-0 {
     grid-area: M;
 }
-#button-asterisk {
+#asterisk {
     grid-area: L;
-    font-size: 1.8em;
-    
 }
-#button-hash {
+#hash {
     grid-area: N;
 }
 
-[id^="button-"] {
+[class^="margin-"] {
     background-color: darkgray;
     border: solid black 1px;
     display: grid;
     place-items: center;
     margin: 10px;
+    width: 30px;
+    height: 30px;
 }
 
 .margin-left {
