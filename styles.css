@@ -72,10 +72,10 @@ body {
     grid-area: I;
 }
 #button-0 {
-    grid-area: J;
+    grid-area: K;
 }
 #asterisk {
-    grid-area: K;
+    grid-area: J;
 }
 #hash {
     grid-area: L;
