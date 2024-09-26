@@ -58,6 +58,8 @@ body {
     width: 60%;
     height: 35px;
     margin: 40px auto;
+    text-align: center;
+    padding: 5px;
 }
 
 #button-1 {
