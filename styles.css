@@ -12,6 +12,7 @@ body {
 
 #container {
     border: solid black 1px;
+    border-radius: 10px;
     width: 250px;
     height: 300px;
     margin: auto;
@@ -21,10 +22,11 @@ body {
 
 #buttons {
     border: solid black 1px;
-    width: 50%;
-    height: 50%;
+    border-radius: 10px;
+    width: 45%;
+    height: 45%;
     display: grid;
-    place-content: center;
+    place-items: center;
     margin: auto;
     margin-top: 40px;
     grid-area: B;
@@ -36,9 +38,24 @@ body {
         "G H I"
         "J K L";
 }
+#buttons div {
+    background-color: darkgray;
+    border: solid black 1px;
+    display: grid;
+    place-items: center;
+    width: 1.2em;
+    height: 1.1em;
+    font-size: 1rem;
+    /*margin: 10px;*/
+    position: relative;
+}
+#buttons div:hover {
+    cursor: pointer;
+}
 
 #display {
     border: solid black 1px;
+    border-radius: 5px;
     width: 60%;
     height: 35px;
     margin: 40px auto;
@@ -79,28 +96,4 @@ body {
 }
 #hash {
     grid-area: L;
-}
-
-#buttons div {
-    background-color: darkgray;
-    border: solid black 1px;
-    display: grid;
-    place-items: center;
-    width: 1.2em;
-    height: 1.2em;
-    font-size: 1rem;
-    margin: 10px;
-}
-#buttons div:hover {
-    cursor: pointer;
-}
-
-.margin-left {
-    margin-left: 50px;
-}
-.margin-right{
-    margin-right: 50px;
-}
-.margin-around {
-    margin: 10px 30px;
 }
