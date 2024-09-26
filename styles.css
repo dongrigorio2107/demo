@@ -16,74 +16,83 @@ body {
     height: 300px;
     margin: auto;
     margin-top: 40px;
+    display: block;
+}
+
+#buttons {
+    border: solid black 1px;
+    width: 50%;
+    height: 50%;
     display: grid;
-    justify-content: center;
-    align-content: end;
+    place-content: center;
+    margin: auto;
+    margin-top: 40px;
+    grid-area: B;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: 
-        "A A A"
-        "B C D"
-        "E F G"
-        "H I J"
-        "L M N";
+        "A B C"
+        "D E F"
+        "G H I"
+        "J K L";
 }
 
 #display {
-    grid-area: A;
     border: solid black 1px;
     width: 60%;
     height: 35px;
-    place-self: center;
-    margin-top: 30px;
-    margin-bottom: 20px
+    margin: 40px auto;
 }
 
 #button-1 {
-    grid-area: B;
+    grid-area: A;
 }
 #button-2 {
-    grid-area: C;
+    grid-area: B;
 }
 #button-3 {
-    grid-area: D;
+    grid-area: C;
 }
 #button-4 {
-    grid-area: E;
+    grid-area: D;
 }
 #button-5 {
-    grid-area: F;
+    grid-area: E;
 }
 #button-6 {
-    grid-area: G;
+    grid-area: F;
 }
 #button-7 {
-    grid-area: H;
+    grid-area: G;
 }
 #button-8 {
-    grid-area: I;
+    grid-area: H;
 }
 #button-9 {
-    grid-area: J;
+    grid-area: I;
 }
 #button-0 {
-    grid-area: M;
+    grid-area: J;
 }
 #asterisk {
-    grid-area: L;
+    grid-area: K;
 }
 #hash {
-    grid-area: N;
+    grid-area: L;
 }
 
-[class^="margin-"] {
+#buttons div {
     background-color: darkgray;
     border: solid black 1px;
     display: grid;
     place-items: center;
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 1rem;
     margin: 10px;
-    width: 30px;
-    height: 30px;
+}
+#buttons div:hover {
+    cursor: pointer;
 }
 
 .margin-left {
