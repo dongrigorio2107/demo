@@ -21,6 +21,7 @@ body {
 }
 
 #buttons {
+    background-color: rgb(73, 73, 73);
     border: solid black 1px;
     border-radius: 10px;
     width: 50%;
@@ -38,17 +39,20 @@ body {
         "G H I"
         "J K L";
 }
-#buttons div {
-    background-color: darkgray;
-    border: solid black 1px;
+#buttons button {
+    background-color: rgb(160, 248, 207);
+    border: solid rgb(108, 202, 171) 2px;
+    box-shadow: 1px 1px 5px 2px;
+    border-radius: 25%;
     justify-content: center;
+    align-content: center;
     display: grid;
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.5em;
+    height: 1.5em;
     font-size: 1rem;
     align-self: center;
 }
-#buttons div:hover {
+#buttons button:hover {
     cursor: pointer;
 }
 
