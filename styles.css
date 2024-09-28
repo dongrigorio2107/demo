@@ -21,9 +21,9 @@ body {
 }
 
 .part {
-    background-image: linear-gradient(rgb(150, 150, 110), rgb(45, 90, 70));
-    border: solid rgb(196, 102, 102) 2px;
-    box-shadow: 0 0 1px 1px, 0 0 2px 1px rgb(196, 102, 102) inset;
+    background-image: linear-gradient(rgb(154, 154, 100), rgb(45, 90, 70));
+    border: solid rgb(45, 90, 70) 2px;
+    box-shadow: 0px 0px 1px 1px, 0px 0px 5px 5px rgb(45, 90, 70) inset;
     border-radius: 10px;
     height: inherit;
     width: 100px;
@@ -83,10 +83,10 @@ button {
 
 #display {
     position: relative;
-    background-color: rgb(160, 210, 84);
-    border: solid rgb(64, 64, 64) 4px;
+    background-color: rgb(156, 225, 53);
+    border: solid rgb(70, 44, 44) 2px;
+    box-shadow: 0px 0px 0px 2px rgb(100, 100, 100), 0px 0px 10px 1px inset;
     border-radius: 10px;
-    box-shadow: 0px 1px 1px 2.5px rgb(35, 35, 35), 0 0 10px inset;
     width: 60%;
     height: 40px;
     margin: 40px auto;
@@ -137,29 +137,36 @@ button {
     position: absolute;
     z-index: 2;
     border: solid black 1px;
-    box-shadow:  0px 0px 1px 0.1px;
-    background-image: linear-gradient(to right, grey, white);
+    box-shadow:  0px 0px 5px 0.1px inset;
+    background-image: linear-gradient(to right, rgb(101, 101, 101), rgb(216, 216, 216));
     width: 100.5%;
     height: 12%;
 }
-#duct-tape-1 {
+#duct-tape-top {
     top: 27.5%;
 }
-#duct-tape-2 {
+#duct-tape-bottom {
     top: 80%;
-    
 }
-.tape-break {
+.tape-div {
     position: fixed;
-    border-right: solid rgba(0, 0, 0) 1px;
+    border-right: none;
     width: 0px;
     height: 8%;
 }
-#tape-break-1 {
-    box-shadow: 5px 0px 8px 0.5px;
-    margin-left: 60px;
+#tape-div-top-left {
+    box-shadow: 5px 0px 5px 0.5px;
+    margin-left: 0px;
 }
-#tape-break-2 {
-    box-shadow: -5px 0px 8px 0.5px;
-    margin-left: 240px;
+#tape-div-top-right {
+    box-shadow: -2px 0px 5px 1px;
+    margin-left: 300px;
+}
+#tape-div-bottom-left {
+    box-shadow: 5px 0px 5px 0.5px;
+    margin-left: 0px;
+}
+#tape-div-bottom-right {
+    box-shadow: -2px 0px 5px 1px;
+    margin-left: 300px;
 }
