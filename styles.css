@@ -11,26 +11,49 @@ body {
 }
 
 #container {
-    border: solid black 1px;
-    border-radius: 10px;
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 350px;
     margin: auto;
     margin-top: 40px;
     display: block;
+    position: relative;
+    z-index: 0;
+}
+
+.part {
+    background-color: rgba(171, 165, 122);
+    border: solid rgb(196, 102, 102) 2px;
+    box-shadow: 0 0 1px 1px, 0 0 2px 1px rgb(196, 102, 102) inset;
+    border-radius: 10px;
+    height: inherit;
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+}
+#part-left {
+    left: 0px;
+}
+#part-mid {
+    left: 100px;
+}
+#part-right {
+    left: 200px;
 }
 
 #buttons {
-    background-color: rgb(73, 73, 73);
-    border: solid black 1px;
+    position: relative;
+    background-color: rgb(64, 64, 64);
+    border: solid rgb(73, 73, 73) 1px;
     border-radius: 10px;
-    width: 50%;
-    height: 50%;
+    box-shadow: 0 0 2px 3px;
+    width: 35%;
+    height: 35%;
     display: grid;
     place-items: center;
+    top: 13%;
     margin: auto;
-    margin-top: 40px;
-    padding: 10px 10px;
+    margin-top: 20%;
+    padding: 5px 5px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
@@ -38,32 +61,39 @@ body {
         "D E F"
         "G H I"
         "J K L";
+        z-index: 2;
 }
-#buttons button {
+button {
     background-color: rgb(160, 248, 207);
     border: solid rgb(108, 202, 171) 2px;
-    box-shadow: 1px 1px 5px 2px;
+    box-shadow: 0 0 5px 2px; 
     border-radius: 25%;
     justify-content: center;
     align-content: center;
     display: grid;
     width: 1.5em;
     height: 1.5em;
-    font-size: 1rem;
+    font-size: 0.9rem;
     align-self: center;
+    z-index: 2;
 }
 #buttons button:hover {
     cursor: pointer;
 }
 
 #display {
-    border: solid black 1px;
-    border-radius: 5px;
+    position: relative;
+    background-color: rgb(160, 210, 84);
+    border: solid rgb(64, 64, 64) 4px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 1px, 0 0 10px inset;
     width: 60%;
-    height: 35px;
+    height: 40px;
     margin: 40px auto;
     text-align: center;
+    top: 12%;
     padding: 5px;
+    z-index: 2;
 }
 
 #button-1 {
@@ -101,4 +131,20 @@ body {
 }
 #hash {
     grid-area: L;
+}
+
+.duct-tape {
+    position: absolute;
+    z-index: 2;
+    border: solid black 1px;
+    background-image: linear-gradient(to right, grey, white);
+    width: 100.5%;
+    height: 12%;
+}
+#duct-tape-1 {
+    top: 27.5%;
+}
+#duct-tape-2 {
+    top: 80%;
+    
 }
